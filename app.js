@@ -18,6 +18,8 @@ app.use(
   })
 );
 
+app.use('/users', require('./routes/user.routes'));
+
 app.use(errorHandler);
 
 module.exports = app;

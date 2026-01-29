@@ -19,6 +19,9 @@ app.use(
 );
 
 app.use('/users', require('./routes/user.routes'));
+app.use('/tasks', require('./routes/task.routes'));
+
+app.use('/uploads', express.static('uploads'));
 
 app.use(errorHandler);
 
